@@ -56,3 +56,9 @@ if can_plot:
     plt.grid(True)
     plt.xlim(-np.pi, np.pi)
     plt.ylim
+    
+    # Highlight stable and unstable equilibria
+    plt.scatter([0], [0], color='green', label='Theoretically Stable with Control', s=100)  # Theoretically stable with active control
+    plt.scatter([np.pi, -np.pi], [0, 0], color='red', label='Unstable Equilibrium', s=100)
+    plt.legend()
+    plt.show()
